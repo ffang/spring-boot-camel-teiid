@@ -32,8 +32,8 @@
 
     <!-- dependency versions -->
     <fabric8.version>2.3.2</fabric8.version>
-    <spring-boot.version>1.5.4.RELEASE</spring-boot.version>
-    <teiid.version>9.0.0.Final</teiid.version>
+    <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
+    <teiid.version>8.12.13.6_3-redhat-1</teiid.version>
 
     <!-- maven plugin versions -->
     <fabric8.maven.plugin.version>3.5.34</fabric8.maven.plugin.version>
@@ -162,17 +162,16 @@
 
   <repositories>
     <repository>
-      <id>jboss-public-repository-group</id>
-      <name>JBoss Public Repository Group</name>
-      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+      <id>redhat.ga</id>
+      <name>Red Hat General Availability Repository</name>
+      <url>https://maven.repository.redhat.com/ga</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
       <releases>
         <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>
       </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
-      </snapshots>
     </repository>
   </repositories>
 
